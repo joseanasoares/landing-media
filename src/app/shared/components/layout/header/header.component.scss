@@ -1,0 +1,14 @@
+:host {
+    --content-padding: 50px 80px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: var(--content-padding);
+    background-color: var(--primary-color);
+    position: relative;
+    z-index: 0;
+  }
+  
+  
