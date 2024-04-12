@@ -1,11 +1,12 @@
-import { CommonModule, NgClass, NgIf } from '@angular/common';
-import { Component } from '@angular/core';
+import { CommonModule, NgClass, NgIf, NgStyle } from '@angular/common';
+import { Component, Input } from '@angular/core';
 import { DropdownComponent } from '../../design-system/dropdown/dropdown.component';
 
 @Component({
   selector: 'app-header',
   imports: [
-    DropdownComponent
+    DropdownComponent,
+    NgStyle
   ],
   standalone: true,
   templateUrl: './header.component.html',
@@ -13,5 +14,5 @@ import { DropdownComponent } from '../../design-system/dropdown/dropdown.compone
 })
 
 export class HeaderComponent {
-  
+  @Input() lineColor? :string
 }

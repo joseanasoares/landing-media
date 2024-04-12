@@ -25,24 +25,16 @@ interface tab {
 })
 
 
-export class DropdownComponent implements OnInit{
+export class DropdownComponent {
+  @Input() options: Array<any> = [];
+  @Output() dropdownClicked = new EventEmitter<void>();
 
-    @Output() optionSelected = new EventEmitter()
-    public tabs: Array<tab> | null = null
-    @Input() options :Array<any> = []
-    @Input() openDropdown :boolean = false
-    @Input() top? :number;
-    @Input() bottom? :number;
-    public slcOption :number = 0
+  onItemClick(item: any): void {
+  }
 
+  onDropdownContainerClicked(): void {
+    this.dropdownClicked.emit();
+  }
 
-    ngOnInit(): void {
-        this.slcOption = this.options[0].id
-    }
-
-    public onOptionSelected(option :any){
-        this.slcOption = option.id
-        this.optionSelected.emit(option)
-    }
 }
 

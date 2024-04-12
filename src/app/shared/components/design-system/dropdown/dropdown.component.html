@@ -1,8 +1,6 @@
-
-<div class="dropdown-container" [ngClass]="{'active' : openDropdown}" [ngStyle]="{top: top+'px', bottom: bottom+'px'}">
-    <div class="dropdown-item" *ngFor="let option of options" [ngClass]="{'selected': option.id === slcOption}" (click)="onOptionSelected(option)">
-      <span class="selection" *ngIf="option.selection"></span>
-      <span class="text" > {{ option.text }}</span>
-      <span class="icon" *ngIf="option.icon"></span>
-    </div>
+<!-- dropdown.component.html -->
+<div class="dropdown-container" (click)="onDropdownContainerClicked()">
+  <div class="dropdown-item" *ngFor="let option of options" (click)="onItemClick(option)">
+      {{ option.name }}
   </div>
+</div>

@@ -9,6 +9,14 @@
     background-color: var(--primary-color);
     position: relative;
     z-index: 0;
+
+    .line{
+      height: 2px;
+      width: 80%;
+      background-color: white;
+      position: absolute;
+      bottom: 10px;
+    }
   }
   
   

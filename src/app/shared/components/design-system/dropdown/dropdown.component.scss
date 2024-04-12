@@ -13,8 +13,10 @@
   border: 1px solid white;
   border-radius: 8px ;
   overflow: hidden;
+  cursor: pointer;
   &.active{
     display: flex;
+    background-color: red;
   }
   .dropdown-item{
     display: flex;
