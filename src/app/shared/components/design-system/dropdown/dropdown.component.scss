@@ -2,36 +2,26 @@
 
 .dropdown-container{
   position: absolute;
-  display: flex;
-  width: 189px;
-  height: 52px;
-  padding: 0px 24px;
-  gap: 8px;
-  right: 80px;
-  top: 50px;
-  z-index: 1;
-  border: 1px solid white;
-  border-radius: 8px ;
+  display: none;
+  flex-direction: column;
+  z-index: 2;
   overflow: hidden;
   cursor: pointer;
   &.active{
     display: flex;
-    background-color: red;
   }
   .dropdown-item{
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 12px 14px;
+    height: 52px;
     .text{
       color: white
     }
     .selection{
       justify-self: start;
-      width: 16px;
-      height: 16px;
+      height: 20px;
       border-radius: 8px;
-      border: 1px solid var(--color-neutral-gray-1);
+      border: 1px solid gray;
     }
     .icon{
       justify-self: end;
@@ -39,11 +29,11 @@
 
     &.selected{
       .text{
-        color: var(--color-neutral-black-3)
+        color: black
       }
       .selection{
-        background-color: var(--color-primary-3);
-        border: 1px solid var(--color-primary-3);
+        background-color: blue;
+        border: 1px solid pink;
       }
     }
   }

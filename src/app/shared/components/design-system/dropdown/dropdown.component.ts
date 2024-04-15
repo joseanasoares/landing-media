@@ -3,14 +3,8 @@ import { CommonModule, NgClass, NgIf } from '@angular/common';
 
 interface tab {
   id :number
-  active? :boolean,
-  link? :string,
-  name? :string,
-  value? :string,
-  tabs?: Array<tab>
+  name: string
 }
-
-
 
 @Component({
   selector: 'app-dropdown',
@@ -24,17 +18,22 @@ interface tab {
   styleUrls: ['./dropdown.component.scss']
 })
 
+export class DropdownComponent{
+  @Input() options: any[] = [];
+  @Input() openDropdown :boolean = false
+  @Output() optionSelected = new EventEmitter()
 
-export class DropdownComponent {
-  @Input() options: Array<any> = [];
-  @Output() dropdownClicked = new EventEmitter<void>();
-
-  onItemClick(item: any): void {
-  }
+  public selectedOption: any;
+  public slcOption: number = 0
 
   onDropdownContainerClicked(): void {
-    this.dropdownClicked.emit();
+    this.openDropdown = !this.openDropdown; 
+  }
+
+  public onOptionSelected(option: any){
+    this.selectedOption = option;
+    this.optionSelected.emit(option)  
+    console.log(option)
   }
 
 }
-

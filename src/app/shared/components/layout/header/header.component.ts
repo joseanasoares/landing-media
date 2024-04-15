@@ -1,5 +1,5 @@
-import { CommonModule, NgClass, NgIf, NgStyle } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { NgStyle } from '@angular/common';
+import { Component } from '@angular/core';
 import { DropdownComponent } from '../../design-system/dropdown/dropdown.component';
 
 @Component({
@@ -14,5 +14,19 @@ import { DropdownComponent } from '../../design-system/dropdown/dropdown.compone
 })
 
 export class HeaderComponent {
-  @Input() lineColor? :string
+  openDropdown = false;
+  idiom = [
+    { "id": 1, "name": "Português/BR" },
+    { "id": 2, "name": "English/US" }
+  ]  
+  selectedLanguage: any;
+
+  onLanguageSelected(language: any): void {
+    this.selectedLanguage = language;
+  }
+
+  toggleDropdown(): void {
+    this.openDropdown = !this.openDropdown;
+  }
+
 }

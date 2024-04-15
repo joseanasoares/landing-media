@@ -16,12 +16,5 @@ import { DropdownComponent } from 'src/app/shared/components/design-system/dropd
 })
 
 export class HomeComponent {
-  idiom = [
-    { "index": 1, "name": "Português/BR" },
-    { "index": 2, "name": "English/US" }
-  ];
 
-  onDropdownClicked(): void {
-    console.log('Dropdown container clicked');
-  }
 }
