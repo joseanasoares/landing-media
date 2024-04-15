@@ -18,22 +18,26 @@ interface tab {
   styleUrls: ['./dropdown.component.scss']
 })
 
-export class DropdownComponent{
+export class DropdownComponent implements OnInit{
   @Input() options: any[] = [];
   @Input() openDropdown :boolean = false
   @Output() optionSelected = new EventEmitter()
+  @Input() top? :number;
+  @Input() bottom? :number;
 
   public selectedOption: any;
   public slcOption: number = 0
 
-  onDropdownContainerClicked(): void {
-    this.openDropdown = !this.openDropdown; 
+  
+  ngOnInit(): void {
+    if (this.options.length > 0) {
+      this.slcOption = this.options[0].id;
+    }
   }
 
   public onOptionSelected(option: any){
-    this.selectedOption = option;
+    this.selectedOption = option.id;
     this.optionSelected.emit(option)  
-    console.log(option)
   }
 
 }

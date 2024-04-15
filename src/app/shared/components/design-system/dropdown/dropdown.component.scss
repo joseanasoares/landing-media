@@ -5,37 +5,34 @@
   display: none;
   flex-direction: column;
   z-index: 2;
+  width: 189px;
+  height: 100px;
+  border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
+  background-color: var(--color-white);
+  transition: height 2s ease; 
+    
   &.active{
-    display: flex;
+    display: flex;   
   }
   .dropdown-item{
     display: flex;
     align-items: center;
-    height: 52px;
-    .text{
-      color: white
-    }
+    padding: 12px;
+    color: black;
+  
     .selection{
       justify-self: start;
       height: 20px;
       border-radius: 8px;
-      border: 1px solid gray;
+      border: 1px solid var(--color-white);
     }
-    .icon{
-      justify-self: end;
-    }
-
-    &.selected{
-      .text{
-        color: black
-      }
-      .selection{
-        background-color: blue;
-        border: 1px solid pink;
-      }
-    }
+  }
+  .dropdown-item:hover{
+    background-color:var(--color-white);
+    font-weight: 900;
+    color: var(--secondary-color)
   }
 }
 

@@ -1,4 +1,4 @@
-import { NgStyle } from '@angular/common';
+import { NgStyle, NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 import { DropdownComponent } from '../../design-system/dropdown/dropdown.component';
 
@@ -6,7 +6,8 @@ import { DropdownComponent } from '../../design-system/dropdown/dropdown.compone
   selector: 'app-header',
   imports: [
     DropdownComponent,
-    NgStyle
+    NgStyle,
+    NgClass
   ],
   standalone: true,
   templateUrl: './header.component.html',
@@ -17,9 +18,11 @@ export class HeaderComponent {
   openDropdown = false;
   idiom = [
     { "id": 1, "name": "Português/BR" },
-    { "id": 2, "name": "English/US" }
+    { "id": 2, "name": "English/US" },
+    { "id": 3, "name": "French/FR"}
   ]  
-  selectedLanguage: any;
+
+  selectedLanguage: any = this.idiom[0];
 
   onLanguageSelected(language: any): void {
     this.selectedLanguage = language;
@@ -27,6 +30,11 @@ export class HeaderComponent {
 
   toggleDropdown(): void {
     this.openDropdown = !this.openDropdown;
+  }
+
+  getDropdownOptions(): any[] {
+    // Filter out the selected language from the dropdown options
+    return this.idiom.filter(lang => lang.id !== this.selectedLanguage.id);
   }
 
 }

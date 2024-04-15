@@ -10,19 +10,40 @@
     position: relative;
     z-index: 0;
   }
-
+  
   .box{
     position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 189px;
     height: 52px;
-    padding: 0px 24px;
     right: 80px;
     top: 50px;
     border: 1px solid white;
     border-radius: 8px ;
     cursor: pointer;
+    color:white;
+    
+    @media (max-width: 425px){
+     right: 40px;
+    }
+    @media screen and (min-width: 1441px){
+      right: 284px
+    }
+
+    .text{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px 0 24px;
+
+      & img.open{
+      transform: rotate(180deg);
+      transition: transform 0.3s
+     }
+     
+    }
   }
   
   

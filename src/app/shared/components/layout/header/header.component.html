@@ -1,6 +1,21 @@
 <header>
     <ng-content ></ng-content>
     <div class="box" (click)="toggleDropdown()">
-        <app-dropdown [options]="idiom"  [openDropdown]="openDropdown" (optionSelected)="onLanguageSelected($event)" ></app-dropdown>
+        <span 
+        class="text"
+        >       
+            {{ selectedLanguage.name }}
+            <img 
+            src="../../../../../assets/icons/angle-down.svg" 
+            alt="angle-down"
+            [ngClass]="{ 'open': openDropdown }">
+        </span>
+        <app-dropdown 
+        [top]="50"
+        [options]="getDropdownOptions()"
+        [openDropdown]="openDropdown" 
+        (optionSelected)="onLanguageSelected($event)" 
+        >
+        </app-dropdown>
     </div>    
 </header>"
