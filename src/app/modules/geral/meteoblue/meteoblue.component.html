@@ -1,11 +1,15 @@
-<app-background 
+<div class="content">
+    <app-background 
     [background]="'var(--primary-color)'"
     [videoSource]="'assets/videos/geral.mp4'"
-></app-background>
+    ></app-background>
     
 <app-header></app-header> 
 <app-content
     [svgPaths]="svgPaths"
     [svgPathsSm]="svgPathsSm"
+    [text]="text"
 ></app-content>
-    <!--<app-footer></app-footer>      -->
+<app-footer></app-footer>
+</div>
+

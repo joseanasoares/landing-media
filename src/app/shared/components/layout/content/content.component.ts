@@ -17,8 +17,10 @@ import { InputComponent } from '../../design-system/input/input.component';
 export class ContentComponent implements OnInit{
   @Input() svgPaths: string[] = [];
   @Input() svgPathsSm: string[] = [];
+  @Input() text: string = "";
   svgContent: string[] = [];
-  svgContentSm: string[] = [];
+  svgContentSm: string[] = []
+
 
   ngOnInit(): void {
     this.loadSVGs();

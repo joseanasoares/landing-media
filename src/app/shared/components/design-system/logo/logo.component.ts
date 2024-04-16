@@ -14,4 +14,5 @@ export class LogoComponent {
   @Input() logoSource = ''
   @Input() svgContent: string[] = []; 
   @Input() svgContentSm: string[] = []; 
+  @Input() text: string = ''
 }

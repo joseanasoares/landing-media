@@ -1,8 +1,21 @@
-*{
-    position: absolute;
-    padding: 0 80px;
-
-    @media(max-width: 425px){
-        padding: 24px 12px;
-      }  
+.principal-content{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+.text-content{
+  background-color: pink;
+  width: fit-content;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 30px;  
+  overflow: hidden;
+}
+.options-content{
+  background-color: cadetblue;
+  width: 473px;
+  height: auto
 }
