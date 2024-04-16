@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './modules/geral/home/home.component';
+import { MeteoblueComponent } from './modules/geral/meteoblue/meteoblue.component';
 
 const routeConfig: Routes = [
     {
       path: '',
-      component: HomeComponent,
+      component: MeteoblueComponent,
       title: 'Home page'
     },
 

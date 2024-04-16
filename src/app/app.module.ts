@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { HomeComponent } from './modules/geral/home/home.component';
 import { RouterModule } from '@angular/router';
+import { MeteoblueComponent } from './modules/geral/meteoblue/meteoblue.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports:[
-    HomeComponent,
-    RouterModule
+    RouterModule,
+    MeteoblueComponent
   ],
   styleUrls: ['./app.component.scss'],
   template: `

@@ -1,13 +1,14 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { LogoComponent } from '../../design-system/logo/logo.component';
-import { HttpClient } from '@angular/common/http';
+import { InputComponent } from '../../design-system/input/input.component';
 
 @Component({
   selector: 'app-content',
   standalone: true,
   imports: [
     LogoComponent,
+    InputComponent,
     NgFor
   ],
   templateUrl: './content.component.html',

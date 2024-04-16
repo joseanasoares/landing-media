@@ -15,11 +15,11 @@ import { FooterComponent } from 'src/app/shared/components/layout/footer/footer.
     ContentComponent,
     FooterComponent,
   ],
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  templateUrl: './meteoblue.component.html',
+  styleUrls: ['./meteoblue.component.scss'],
 })
 
-export class HomeComponent {
+export class MeteoblueComponent {
   svgPaths: string[] = [
     'assets/logos/meteoblue.svg',
     'assets/logos/brazil.svg'    
