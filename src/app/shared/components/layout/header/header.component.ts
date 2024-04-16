@@ -30,6 +30,7 @@ export class HeaderComponent {
 
   toggleDropdown(): void {
     this.openDropdown = !this.openDropdown;
+    console.log('click')
   }
 
   getDropdownOptions(): any[] {

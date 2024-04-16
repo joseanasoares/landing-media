@@ -1,5 +1,6 @@
 import { Component, Input} from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BackgroundComponent } from 'src/app/shared/components/layout/background/background/background.component';
 import { HeaderComponent } from '../../../shared/components/layout/header/header.component';
 import { DropdownComponent } from 'src/app/shared/components/design-system/dropdown/dropdown.component';
 
@@ -8,6 +9,7 @@ import { DropdownComponent } from 'src/app/shared/components/design-system/dropd
   standalone: true,
   imports: [
     CommonModule,
+    BackgroundComponent,
     HeaderComponent,
     DropdownComponent
   ],
