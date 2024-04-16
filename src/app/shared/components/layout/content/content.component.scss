@@ -1,0 +1,8 @@
+*{
+    position: absolute;
+    padding: 0 80px;
+
+    @media(max-width: 425px){
+        padding: 24px 12px;
+      }  
+}

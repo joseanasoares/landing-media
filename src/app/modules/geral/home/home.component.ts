@@ -20,5 +20,13 @@ import { FooterComponent } from 'src/app/shared/components/layout/footer/footer.
 })
 
 export class HomeComponent {
+  svgPaths: string[] = [
+    'assets/logos/meteoblue.svg',
+    'assets/logos/brazil.svg'    
+  ]
 
+  svgPathsSm: string[] = [
+    'assets/logos/meteoblue-sm.svg',
+    'assets/logos/brazil-sm.svg'    
+  ]
 }

@@ -1,14 +1,17 @@
 :host {
-    --content-padding: 50px 80px;
+    --padding-desktop: 50px 80px;
   }
   header {
     display: flex;
     align-items: center;
     height: 60px;
-    padding: var(--content-padding);
+    padding: var(--padding-desktop);
     background-color: transparent;
     position: relative;
     z-index: 0;
+    @media (max-width: 425px){
+    display: none;
+    }   
   }
   
   .box{
@@ -26,9 +29,10 @@
     color:white;
     
     @media (max-width: 425px){
+      display: none;
      right: 40px;
     }
-    @media screen and (min-width: 1441px){
+    @media screen and (min-width: 1900px){
       right: 284px
     }
 

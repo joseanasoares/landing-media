@@ -145,6 +145,9 @@ html,
 body {
   @extend .text-default-medium;
   background: var(--white);
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
   
 button.primary {
@@ -154,5 +157,6 @@ button.primary {
   color: white;
   border-radius: 8px;
 }
+
 
   

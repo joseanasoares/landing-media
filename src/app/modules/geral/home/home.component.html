@@ -3,8 +3,11 @@
     [background]="'var(--primary-color)'"
     [videoSource]="'assets/videos/geral.mp4'"
     ></app-background>
+    
     <app-header></app-header> 
-    <app-content></app-content>
-    <app-footer></app-footer>      
+    <app-content
+    [svgPaths]="svgPaths"
+    [svgPathsSm]="svgPathsSm"
+    ></app-content>
+    <!--<app-footer></app-footer>      -->
 </div>
-

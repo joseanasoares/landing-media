@@ -1,0 +1,9 @@
+<ng-content></ng-content>
+<div class="container">
+    <div class="logo" *ngFor="let option of svgContent" >
+        <img [src]="option" alt="logotipo">
+    </div>
+    <div class="logo-sm" *ngFor="let option of svgContentSm" >
+        <img [src]="option" alt="logotipo-mob">
+    </div>
+</div>
