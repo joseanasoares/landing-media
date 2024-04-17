@@ -1,0 +1,14 @@
+<div *ngIf="brandContent.length > 1; else singleImage">
+  <div class="grid-container">
+    <div class="grid-item" *ngFor="let option of brandContent">
+      <img [src]="option" alt="marcas" />
+    </div>
+  </div>
+</div>
+
+<ng-template #singleImage>
+    <div class="single-image"  *ngFor="let option of brandContent">
+        <img [src]="option" alt="marcas" />
+    </div>
+</ng-template>
+

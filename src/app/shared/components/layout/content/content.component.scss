@@ -4,18 +4,22 @@
   gap: 50px;
   justify-content: space-between;
   padding: 0 80px;
+  height: calc(100% - 300px);
+
+  @media (max-width: 425px){
+    flex-direction: column;
+  }
 }
 .text-content{
-  background-color: pink;
-  width: fit-content;
   display: flex;
-  position: relative;
   flex-direction: column;
   gap: 30px;  
   overflow: hidden;
 }
 .options-content{
   background-color: cadetblue;
-  width: 473px;
-  height: auto
+  padding: 0 50px;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }

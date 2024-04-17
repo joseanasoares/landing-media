@@ -1,19 +1,16 @@
 <div class="principal-content">
-        <div class="text-content">
-                <app-logo 
-                [svgContent]="svgContent"
-                [svgContentSm]="svgContentSm" 
-                ></app-logo>
-    
-                <app-input 
-                [text] ="text"
-                ></app-input>
-        </div>
-        <div class="options-content">
+  <div class="text-content">
+    <app-logo
+      [svgContent]="svgContent"
+      [svgContentSm]="svgContentSm"
+    ></app-logo>
 
-        </div>
+    <app-input [text]="text"></app-input>
+  </div>
+  <div class="options-content">
+    <app-brand
+        [brandContent]="brandContent"
+    >
+    </app-brand>
+  </div>
 </div>
-
- 
-
-
