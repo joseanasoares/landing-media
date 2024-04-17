@@ -1,0 +1,17 @@
+button {
+  padding: 12px 24px;
+  display: flex;
+  align-content: center;
+  gap: 8px;
+  color: var(--color-white);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; 
+
+  @media (max-width: 425px) {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+}

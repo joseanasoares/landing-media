@@ -33,11 +33,11 @@ export class MeteoblueComponent {
   brandPath: string[] = [
     'assets/brands/tempo-cidade.svg',
     'assets/brands/clima-campo.svg',
-    'assets/brands/clima-campo.svg',
-    'assets/brands/clima-campo.svg'
-
-
   ]
 
   text: string = "meteoblue® é um dos maiores provedores de dados e mapas meteorológicos globalmente, uma empresa Suíça de classe mundial que se especializou em processar e analisar com Inteligência Artificial (I.A.) grandes volumes de dados ambientais e meteorológicos em todo o planeta. Hoje a meteoblue® atende empresas como Microsoft, Windy, Shell, Mercedez Bens e provê dados e mapas para milhares de Apps e Plataformas em mais de 100 países."
+
+  buttonColor: string = "var(--button-meteoblue)"
+  buttonText: string = "Baixe documento"
+  buttonIcon: string = 'assets/icons/download.svg'
 }

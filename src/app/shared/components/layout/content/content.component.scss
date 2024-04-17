@@ -4,21 +4,25 @@
   gap: 50px;
   justify-content: space-between;
   padding: 0 80px;
-  height: calc(100% - 300px);
+  height: calc(100% - 475px);
 
   @media (max-width: 425px){
     flex-direction: column;
+  }
+
+  @media screen and (min-width: 1900px){
+  padding: 0 284px
   }
 }
 .text-content{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 30px;  
   overflow: hidden;
 }
 .options-content{
-  background-color: cadetblue;
-  padding: 0 50px;
+  padding: 0 54px;
   display: flex;
   align-content: center;
   align-items: center;

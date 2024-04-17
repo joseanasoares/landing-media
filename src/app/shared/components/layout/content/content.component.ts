@@ -2,12 +2,19 @@ import { Component, Input, OnInit } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { LogoComponent } from '../../design-system/logo/logo.component';
 import { InputComponent } from '../../design-system/input/input.component';
+import { ButtonComponent } from '../../design-system/button/button.component';
 import { BrandComponent } from '../../design-system/brand/brand.component';
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [LogoComponent, InputComponent, BrandComponent, NgFor],
+  imports: [
+    LogoComponent, 
+    InputComponent, 
+    ButtonComponent,
+    BrandComponent, 
+    NgFor
+  ],
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.scss'],
 })
@@ -16,6 +23,9 @@ export class ContentComponent implements OnInit {
   @Input() svgPathsSm: string[] = [];
   @Input() brandPath: string[] = [];
   @Input() text: string = '';
+  @Input() buttonColor: string = ''
+  @Input() buttonIcon: string =''
+  @Input() buttonText: string =''
   svgContent: string[] = [];
   svgContentSm: string[] = [];
   brandContent: string[] = [];
