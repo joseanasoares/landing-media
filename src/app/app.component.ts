@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MeteoblueComponent } from './modules/geral/meteoblue/meteoblue.component';
+import { GeralComponent } from './modules/geral/geral.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports:[
     RouterModule,
-    MeteoblueComponent
+    GeralComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
