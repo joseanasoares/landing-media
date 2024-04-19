@@ -1,19 +1,25 @@
 <div class="content">
-    <app-background 
+  <app-background
     [background]="'var(--primary-color)'"
     [videoSource]="'assets/videos/geral.mp4'"
-    ></app-background>
-    
-<app-header></app-header> 
-<app-content
+  ></app-background>
+
+  <app-header></app-header>
+
+  <app-content
     [svgPaths]="svgPaths"
     [svgPathsSm]="svgPathsSm"
     [brandPath]="brandPath"
     [text]="text"
     [buttonColor]="buttonColor"
-    [buttonText]="buttonText"
-    [buttonIcon]="buttonIcon"
-></app-content>
-<app-footer></app-footer>
-</div>
+    [buttonText]="buttonTextContent"
+    [buttonIcon]="buttonIconContent"
+  ></app-content>
 
+  <app-footer
+    [image]="images"
+    [buttonColor]="buttonColor"
+    [buttonText]="buttonTextFooter"
+    [buttonIcon]="buttonIconFooter"
+  ></app-footer>
+</div>

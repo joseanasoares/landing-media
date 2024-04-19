@@ -1,6 +1,8 @@
 <div class="background" [ngStyle]="{'background-color': background}">
   <ng-content ></ng-content>
-  <video autoplay loop id="land-video" class="video">
-    <source [src]="videoSource" type="video/mp4">
-  </video>
+  <div class="video-container"> 
+    <video autoplay loop id="land-video" class="video">
+      <source [src]="videoSource" type="video/mp4">
+    </video>    
+  </div>  
 </div>
