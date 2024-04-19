@@ -1,22 +1,21 @@
+<app-background
+[background]="'var(--primary-color)'"
+[videoSource]="'assets/videos/geral.mp4'"
+></app-background>
 <div class="content">
-  <app-background
-    [background]="'var(--primary-color)'"
-    [videoSource]="'assets/videos/geral.mp4'"
-  ></app-background>
-
-  <app-header></app-header>
-
-  <app-content
-    [svgPaths]="svgPaths"
-    [svgPathsSm]="svgPathsSm"
-    [brandPath]="brandPath"
-    [text]="text"
-    [buttonColor]="buttonColor"
-    [buttonText]="buttonTextContent"
-    [buttonIcon]="buttonIconContent"
-  ></app-content>
-
-  <app-footer class="banana"
+  <div>
+    <app-header></app-header>
+    <app-content
+      [svgPaths]="svgPaths"
+      [svgPathsSm]="svgPathsSm"
+      [brandPath]="brandPath"
+      [text]="text"
+      [buttonColor]="buttonColor"
+      [buttonText]="buttonTextContent"
+      [buttonIcon]="buttonIconContent"
+    ></app-content>
+  </div>
+  <app-footer class=""
     [image]="images"
     [location]="location"
     [buttonColor]="buttonColor"

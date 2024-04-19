@@ -1,9 +1,10 @@
 .principal-content{
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  height: 80%;
   justify-content: space-between;
   padding: 0px 80px;
+  gap: 50px;  
 
   @media (max-width: 425px){
     flex-direction: column;
@@ -17,13 +18,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 30px;  
-  width: 50%;
+  gap: 50px;  
   overflow: hidden;
 }
 .options-content{
   padding: 0 54px;
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
