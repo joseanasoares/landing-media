@@ -9,10 +9,13 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 50px;
+    
+    @media (max-width: 1024px) {
+        grid-template-columns: auto;
+    }
 }
 
 .single-image{
     display: flex;
     justify-content: center;
-
 }

@@ -1,9 +1,19 @@
-import { Component, Input} from '@angular/core';
+import { Component} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BackgroundComponent } from 'src/app/shared/components/layout/background/background/background.component';
 import { HeaderComponent } from '../../shared/components/layout/header/header.component';
 import { ContentComponent } from 'src/app/shared/components/layout/content/content.component';
 import { FooterComponent } from 'src/app/shared/components/layout/footer/footer.component';
+
+
+export interface Location{
+  id: number;
+  image: string;
+  flag: string;
+  title: string;
+  address: string;
+  city: string;
+}
 
 @Component({
   selector: 'app-home',
@@ -31,8 +41,10 @@ export class GeralComponent {
   ]
 
   public brandPath: string[] = [
-    'assets/brands/tempo-cidade.svg',    'assets/brands/clima-campo.svg',
+    'assets/brands/tempo-cidade.svg',
+    'assets/brands/clima-campo.svg',    'assets/brands/clima-campo.svg',
     'assets/brands/clima-campo.svg',
+
 
   ]
 
@@ -47,5 +59,25 @@ export class GeralComponent {
   public images = [
     'assets/images/brazil.png',
     'assets/images/swiss.png'
+  ]
+
+
+  public location: Location[]=[
+    {
+      'id': 1,
+      'flag': 'assets/icons/br.png',
+      'image':'assets/images/brazil.png',
+      'title' : 'Sede no Brasil',
+      'address': 'Av. Cassiano Ricardo, 601 - 6º andar',
+      'city': 'São José dos Campos, SP, Brasil.'
+    },
+    {
+      'id': 2,
+      'flag': 'assets/icons/sw.png',
+      'image': 'assets/images/swiss.png',
+      'title' : 'Matriz',
+      'address': 'Greifengasse 38, 4th floor.',
+      'city': 'Bassel, Switzerland.'
+    }
   ]
 }

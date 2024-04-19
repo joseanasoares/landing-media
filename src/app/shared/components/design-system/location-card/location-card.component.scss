@@ -1,8 +1,46 @@
 p{
-    color: white;
+    color: var(--color-white);
 }
 
-img{
-    width: 67px;
-    height: 67px;
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    height: 94px;
+    gap: 10px
+}
+
+.pin{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 3;
+}
+
+.flag{
+    margin-left: 15px;
+    position: absolute;
+    height: 21px ;
+    width: 20px;
+    z-index: 2;
+}
+
+.city{
+    width: 82px;   
+    z-index: 0;
+    margin-left: 12px;
+    margin-top: 12px;
+    height: 82px;
+    border-radius: 10px;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
 }

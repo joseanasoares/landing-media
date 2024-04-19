@@ -16,6 +16,7 @@ import { ButtonComponent } from '../../design-system/button/button.component';
 })
 export class FooterComponent {
   @Input() image: string[] = []
+  @Input() location: Array<any> = [];
   @Input() buttonColor: string = ''
   @Input() buttonIcon: string =''
   @Input() buttonText: string =''

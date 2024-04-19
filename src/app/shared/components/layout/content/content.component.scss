@@ -3,8 +3,7 @@
   flex-direction: row;
   gap: 50px;
   justify-content: space-between;
-  padding: 50px 80px;
-  height: calc(100% - 400px);
+  padding: 0px 80px;
 
   @media (max-width: 425px){
     flex-direction: column;
@@ -19,11 +18,19 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;  
+  width: 50%;
   overflow: hidden;
 }
 .options-content{
   padding: 0 54px;
+  width: 50%;
   display: flex;
-  align-content: center;
+  justify-content: center;
   align-items: center;
+
+  @media (max-width: 1024px){
+   padding: 0 20px;
+   width: 30%;
+  }
+  
 }

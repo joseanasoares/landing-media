@@ -1,16 +1,9 @@
-:host {
-    --padding-desktop: 50px 80px;
-  }
   header {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    padding: var(--padding-desktop);
-    background-color: transparent;
-    position: relative;
-    z-index: 0;
+    height: 162px;
     @media (max-width: 425px){
     display: none;
+    position: absolute;
+    top: 0;
     }   
   }
   

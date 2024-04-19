@@ -1,9 +1,12 @@
-<p>location-card works!</p>
-
-<div class="container">
-  <div class="card">
-    <div class="logo" *ngFor="let option of image">
-      <img [src]="option" alt="logotipo" />
+<div class="container"> 
+  <div class="card" *ngFor="let local of location">
+    <img src="assets/icons/pin.svg" alt="localização" class="pin">
+    <img [src]="local.flag" alt="localização" class="flag">
+    <img [src]="local.image" class="city">
+    <div class="address">
+      <p class="p3 font-weight-700">{{local.title}}</p>
+      <p class="p4">{{local.address}}<br/> {{local.city}}</p>
     </div>
   </div>
 </div>
+

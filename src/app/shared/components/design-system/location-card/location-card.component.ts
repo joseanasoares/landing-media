@@ -12,5 +12,5 @@ import { NgFor } from '@angular/common';
 })
 export class LocationCardComponent {
   @Input() image: string[] = []
-  
+  @Input() location: Array<any> = [];
 }
