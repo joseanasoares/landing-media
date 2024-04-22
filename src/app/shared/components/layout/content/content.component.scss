@@ -1,13 +1,15 @@
 .principal-content{
   display: flex;
   flex-direction: row;
-  height: 80%;
+  height: calc(100% - 200px);
   justify-content: space-between;
   padding: 0px 80px;
   gap: 50px;  
 
   @media (max-width: 768px){
+    height: 100%;
     flex-direction: column;
+    justify-content: space-around;
     padding: 24px 12px;
     gap: 24px;
   }
@@ -23,6 +25,14 @@
   gap: 50px;  
   overflow: hidden;
 
+  @media(max-width:768px) and (min-width:426px){
+    gap: 24px;
+    .button{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   @media(max-width: 425px){
     gap: 12px;
   }
@@ -36,10 +46,10 @@
 
   @media (max-width: 768px){
     padding: 0 12px 0 12px;
-    width: 99%;
+    width: 97%;
   }
 
-  @media (min-width:769px) and (max-width: 1024px){
+  @media (min-width:769px) and (max-width: 1400px){
    padding: 0 20px;
    width: 30%;
   }

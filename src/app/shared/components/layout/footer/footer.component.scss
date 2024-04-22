@@ -25,9 +25,13 @@ footer {
     .contact{
         display: flex;
         flex-direction: row;
-        align-content: center;
+        align-items: center;
         gap: 10px;
         height: 48px;
+        padding-left: 12px;
+        img{
+          height: 48px;
+        }
 
         @media(max-width: 425px){
           height: 30px;
