@@ -13,10 +13,9 @@ footer {
     
     @media(max-width:425px){
         height: 202px;
-        padding: 24px 12px;
+        padding: 15px 12px;
         flex-direction: column;
-        position: absolute;
-        bottom: 0;
+        align-items: start;
     }
 
     @media screen and (min-width: 1900px){
@@ -26,8 +25,13 @@ footer {
     .contact{
         display: flex;
         flex-direction: row;
+        align-content: center;
         gap: 10px;
-        height: 50px;
+        height: 48px;
+
+        @media(max-width: 425px){
+          height: 30px;
+        }
     }
   }
 

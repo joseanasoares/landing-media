@@ -5,14 +5,23 @@ p{
 .container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 50px;
+    @media(max-width: 768px){
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+    }
 }
 
 .card{
     display: flex;
     flex-direction: row;
     height: 94px;
-    gap: 10px
+    gap: 10px;
+    @media(max-width: 425px){
+        height:68px
+    }
 }
 
 .pin{
@@ -31,12 +40,16 @@ p{
 }
 
 .city{
-    width: 82px;   
+    width: 82px;  
+    height: 82px; 
     z-index: 0;
     margin-left: 12px;
     margin-top: 12px;
-    height: 82px;
     border-radius: 10px;
+    @media(max-width: 425px){
+        width: 54px;  
+        height: 54px; 
+    }
 }
 
 .address{

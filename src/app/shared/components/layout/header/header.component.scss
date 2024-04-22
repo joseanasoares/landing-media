@@ -1,12 +1,12 @@
   header {
     height: 162px;
-    @media (max-width: 425px){
+    @media (max-width: 768px){
     display: none;
     position: fixed;
     top: 0;
     }   
   }
-  
+
   .box{
     position: absolute;
     display: flex;
@@ -20,12 +20,8 @@
     border-radius: 8px ;
     cursor: pointer;
     color: var(--color-white);
-    
-    @media (max-width: 425px){
-      display: none;
-     right: 40px;
-    }
-    @media screen and (min-width: 1900px){
+
+    @media screen and (min-width: 2000px){
       right: 284px
     }
 
