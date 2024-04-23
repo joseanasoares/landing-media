@@ -39,7 +39,7 @@ export class GeralComponent {
   constructor() {
     console.log(this.assetsDirectory);
   }
-  
+
   public svgPaths: string[] = [
     'assets/logos/meteoblue.svg',
     'assets/logos/brazil.svg'    
@@ -61,6 +61,7 @@ export class GeralComponent {
   public buttonTextContent: string = "Baixar documento"
   public buttonIconContent: string = 'assets/icons/download.svg'
   public buttonTextFooter: string = "Contato"
+  //public buttonIconFooter: string = `assets/icons/mail.svg`;
   public buttonIconFooter: string = `${this.assetsDirectory}/linkedin.svg`;
 
   public images = [
