@@ -4,6 +4,11 @@ import { BackgroundComponent } from 'src/app/shared/components/layout/background
 import { HeaderComponent } from '../../shared/components/layout/header/header.component';
 import { ContentComponent } from 'src/app/shared/components/layout/content/content.component';
 import { FooterComponent } from 'src/app/shared/components/layout/footer/footer.component';
+import { environment } from 'src/enviroments/enviroment';
+
+
+const assetsDirectory = environment.assetsDirectory;
+const svgPath = `/${assetsDirectory}/${iconName}.svg`
 
 
 export interface Location{
@@ -51,7 +56,7 @@ export class GeralComponent {
   public buttonTextContent: string = "Baixar documento"
   public buttonIconContent: string = 'assets/icons/download.svg'
   public buttonTextFooter: string = "Contato"
-  public buttonIconFooter: string = 'assets/icons/mail.svg'
+  public buttonIconFooter: string =  `/${assetsDirectory}/${linkedin}.svg`
 
   public images = [
     'assets/images/brazil.png',

@@ -13,16 +13,16 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
-      "i18n":{
-        "sourceLocale":"pt",
+      "i18n": {
+        "sourceLocale": "pt",
         "locales": {
-          "en": "src/locale/messages.en.xlf"          
+         
         }
       },
       "architect": {
         "build": {
-            "builder": "@angular-devkit/build-angular:browser",
-            "options": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
             "localize": true,
             "aot": true,
             "i18nMissingTranslation": "error",
@@ -45,11 +45,10 @@
           },
           "configurations": {
             "pt": {
-              "localize": [ "pt" ]
-           },
-           "en": {
-              "localize": [ "en" ]
-           },
+              "localize": [
+                "pt"
+              ]
+            },
             "production": {
               "budgets": [
                 {
@@ -71,7 +70,45 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "assets": [
+                "src/favicon.ico",
+                "src/assets"
+              ]
+            },
+            "context1": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment1.ts"
+                }
+              ],
+              "assets": [
+                "src/favicon.ico",
+                "src/assets-context1/",
+                {
+                  "glob": "**/*",
+                  "input": "src/assets-context1/",
+                  "output": "/assets/"
+                }
+              ]
+            },
+            "context2": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment2.ts"
+                }
+              ],
+              "assets": [
+                "src/favicon.ico",
+                "src/assets-context2/",
+                {
+                  "glob": "**/*",
+                  "input": "src/assets-context2/",
+                  "output": "/assets/"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -85,11 +122,14 @@
             "development": {
               "browserTarget": "land-media:build:development"
             },
-            "development-en": {
-              "browserTarget": "land-media:build:development,en"
-            },
             "development-pt": {
               "browserTarget": "land-media:build:development,pt"
+            },
+            "development-context1": {
+              "browserTarget": "land-media:build:development,context1"
+            },
+            "development-context2": {
+              "browserTarget": "land-media:build:development,context2"
             }
           },
           "defaultConfiguration": "development-pt"
