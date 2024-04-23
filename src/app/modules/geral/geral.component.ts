@@ -4,11 +4,8 @@ import { BackgroundComponent } from 'src/app/shared/components/layout/background
 import { HeaderComponent } from '../../shared/components/layout/header/header.component';
 import { ContentComponent } from 'src/app/shared/components/layout/content/content.component';
 import { FooterComponent } from 'src/app/shared/components/layout/footer/footer.component';
-import { environment } from 'src/enviroments/enviroment';
+import { environment } from 'src/environments/environment';
 
-
-const assetsDirectory = environment.assetsDirectory;
-const svgPath = `/${assetsDirectory}/${iconName}.svg`
 
 
 export interface Location{
@@ -35,6 +32,14 @@ export interface Location{
 })
 
 export class GeralComponent {
+
+
+  assetsDirectory = environment.assetsDirectory;
+
+  constructor() {
+    console.log(this.assetsDirectory);
+  }
+  
   public svgPaths: string[] = [
     'assets/logos/meteoblue.svg',
     'assets/logos/brazil.svg'    
@@ -56,7 +61,7 @@ export class GeralComponent {
   public buttonTextContent: string = "Baixar documento"
   public buttonIconContent: string = 'assets/icons/download.svg'
   public buttonTextFooter: string = "Contato"
-  public buttonIconFooter: string =  `/${assetsDirectory}/${linkedin}.svg`
+  public buttonIconFooter: string = `${this.assetsDirectory}/linkedin.svg`;
 
   public images = [
     'assets/images/brazil.png',

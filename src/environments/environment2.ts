@@ -1,4 +1,4 @@
 export const environment = {
     production: false,
-    assetsDirectory: 'assets_context2'
+    assetsDirectory: 'assets-context2'
   };

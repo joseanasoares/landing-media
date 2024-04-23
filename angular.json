@@ -15,9 +15,7 @@
       "prefix": "app",
       "i18n": {
         "sourceLocale": "pt",
-        "locales": {
-         
-        }
+        "locales": {}
       },
       "architect": {
         "build": {
@@ -29,25 +27,23 @@
             "outputPath": "dist/land-media",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets"
+              }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
             "pt": {
-              "localize": [
-                "pt"
-              ]
+              "localize": ["pt"]
             },
             "production": {
               "budgets": [
@@ -85,11 +81,10 @@
               ],
               "assets": [
                 "src/favicon.ico",
-                "src/assets-context1/",
                 {
                   "glob": "**/*",
-                  "input": "src/assets-context1/",
-                  "output": "/assets/"
+                  "input": "src/assets-context1",
+                  "output": "/assets-context1"
                 }
               ]
             },
@@ -102,11 +97,10 @@
               ],
               "assets": [
                 "src/favicon.ico",
-                "src/assets-context2/",
                 {
                   "glob": "**/*",
-                  "input": "src/assets-context2/",
-                  "output": "/assets/"
+                  "input": "src/assets-context2",
+                  "output": "/assets-context2"
                 }
               ]
             }
@@ -134,7 +128,6 @@
           },
           "defaultConfiguration": "development-pt"
         },
-        
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
@@ -144,19 +137,11 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         }
