@@ -8,7 +8,7 @@ export const environment = {
       {
         id: 1,
         flag: 'assets/icons/br.png',
-        image: 'assets/images/brazil.png',
+        image: 'assets-meteoblue/sjc.png',
         title: 'Sede no Brasil',
         address: 'Av. Cassiano Ricardo, 601 - 6º andar',
         city: 'São José dos Campos, SP, Brasil.',
@@ -16,11 +16,23 @@ export const environment = {
       {
         id: 2,
         flag: 'assets/icons/sw.png',
-        image: 'assets/images/swiss.png',
+        image: 'assets-meteoblue/swiss.png',
         title: 'Matriz',
         address: 'Greifengasse 38, 4th floor.',
         city: 'Bassel, Switzerland.',
       },
     ],
+    brands: [
+      {
+        id:1,
+        image: 'brand1',
+        alt: "Tempo na Cidade"
+      },
+      {
+        id:2,
+        image: 'brand2',
+        alt: "Clima no Campo"
+      }
+    ]
   },
 };

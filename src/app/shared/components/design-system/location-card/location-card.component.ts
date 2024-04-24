@@ -11,6 +11,5 @@ import { NgFor } from '@angular/common';
   styleUrls: ['./location-card.component.scss']
 })
 export class LocationCardComponent {
-  @Input() image: string[] = []
   @Input() location: Array<any> = [];
 }

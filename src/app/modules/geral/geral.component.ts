@@ -36,9 +36,15 @@ export class GeralComponent {
   private context = environment.context
   private textInput = environment.properties.text
 
+
+  public svgPaths:string[]
+  public locations: Location[] = []
+  public brands: string[] = [];
+
+ 
+
+
   constructor() {
-    console.log(this.context)
-    console.log(this.assetsDirectory);
 
     if (this.context === "meteoblue") {
       console.log('default');
@@ -51,17 +57,14 @@ export class GeralComponent {
       console.log(this.context);
       this.svgPaths = [`${this.assetsDirectory}/logo.svg`]
     }
+
+    environment.properties.location.forEach(location => {
+      this.locations.push(location);
+    });
+
   }
 
-  public svgPaths:string[]
 
-
-
-  
-  // public svgPaths: string[] = [
-  //   'assets/logos/meteoblue.svg',
-  //   'assets/logos/brazil.svg'    
-  // ]
 
   public svgPathsSm: string[] = [
     'assets/logos/meteoblue-sm.svg',
@@ -82,10 +85,4 @@ export class GeralComponent {
   public buttonIconFooter: string = `assets/icons/mail.svg`;
   public linkedin: string = `${this.assetsDirectory}/linkedin.svg`;
 
-  public images = [
-    'assets/images/brazil.png',
-    'assets/images/swiss.png'
-  ]
-
-  public location : Location[] = environment.properties.location
 }

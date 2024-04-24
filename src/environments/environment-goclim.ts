@@ -8,7 +8,7 @@ export const environment = {
       {
         id: 1,
         flag: 'assets/icons/br.png',
-        image: 'assets/images/brazil.png',
+        image: 'assets-goclim/itj.png',
         title: 'Sede METOS BRASIL',
         address: 'Rua Oswaldo Pereira, n. 61',
         city: 'Itajaí, SC, Brasil.',
@@ -16,7 +16,7 @@ export const environment = {
       {
         id: 2,
         flag: 'assets/icons/br.png',
-        image: 'assets/images/brazil.png',
+        image: 'assets-goclim/sjc.png',
         title: 'Sede meteoblue BRASIL',
         address: 'Av. Cassiano Ricardo, 601 - 6º andar.',
         city: 'São José dos Campos, SP, Brasil.',
@@ -24,11 +24,16 @@ export const environment = {
       {
         id: 3,
         flag: 'assets/icons/br.png',
-        image: 'assets/images/brazil.png',
+        image: 'assets-goclim/sc.png',
         title: 'LabMCN',
         address: 'Rua Conde do Pinhal, 1762, Centro',
         city: 'São Carlos, SP, Brasil.',
       },
     ],
+    brands: [
+      {
+        id: 0
+      }
+    ]
   },
 };
