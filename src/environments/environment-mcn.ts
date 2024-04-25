@@ -30,15 +30,15 @@ export const environment = {
         {
           id: 1,
           flag: 'assets/icons/br.png',
-          image: 'assets-mcn/brazil.png',
+          image: 'assets-mcn/sp.png',
           title: 'Sede',
           address: 'Av. Paulista 2.300, Piso Pilotis',
           city: 'São Paulo, SP, Brasil.',
         },
         {
           id: 2,
-          flag: 'assets/icons/sw.png',
-          image: 'assets-mcn/brazil.png',
+          flag: 'assets/icons/br.png',
+          image: 'assets-mcn/sc.png',
           title: 'LabMCN',
           address: 'Rua Conde do Pinhal, 1762, Centro',
           city: 'São Carlos, SP, Brasil.',

@@ -70,9 +70,12 @@ export class GeralComponent {
     'assets/logos/brazil-sm.svg'    
   ]
 
+  public background: string = "var(--background-color)"
+  public video: string = `${this.assetsDirectory}/video.mp4`;
+
   public text: string = `${environment.properties.text}`
 
-  public buttonColor: string = "var(--button-meteoblue)"
+  public buttonColor: string = "var(--button-color)"
   public buttonTextContent: string = "Baixar documento"
   public buttonIconContent: string = 'assets/icons/download.svg'
   public buttonTextFooter: string = "Contato"

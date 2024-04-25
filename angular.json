@@ -88,6 +88,10 @@
                   "input": "src/assets-meteoblue",
                   "output": "/assets-meteoblue"
                 }
+              ],
+              "styles":[
+                "src/styles.scss",
+                "src/global-styles/meteoblue.scss"
               ]
             },
             "campo": {
@@ -105,6 +109,10 @@
                   "input": "src/assets-campo",
                   "output": "/assets-campo"
                 }
+              ],
+              "styles":[
+                "src/styles.scss",
+                "src/global-styles/campo.scss"
               ]
             },
             "cidade": {
@@ -122,6 +130,10 @@
                   "input": "src/assets-cidade",
                   "output": "/assets-cidade"
                 }
+              ],
+              "styles":[
+                "src/styles.scss",
+                "src/global-styles/cidade.scss"
               ]
             },
             "mcn": {
@@ -139,6 +151,10 @@
                   "input": "src/assets-mcn",
                   "output": "/assets-mcn"
                 }
+              ],
+              "styles":[
+                "src/styles.scss",
+                "src/global-styles/mcn.scss"
               ]
             },
             "goclim": {
@@ -156,6 +172,10 @@
                   "input": "src/assets-goclim",
                   "output": "/assets-goclim"
                 }
+              ],
+              "styles":[
+                "src/styles.scss",
+                "src/global-styles/goclim.scss"
               ]
             }
           },
