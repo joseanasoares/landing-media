@@ -15,7 +15,7 @@ export const environment = {
         {
           id: 1,
           flag: 'assets/icons/br.png',
-          image: 'assets-cidade/brazil.png',
+          image: 'assets-cidade/sjc.png',
           title: 'Sede no Brasil',
           address: 'Av. Cassiano Ricardo, 601 - 6º andar',
           city: 'São José dos Campos, SP, Brasil.',

@@ -37,10 +37,5 @@ export const environment = {
         city: 'São Carlos, SP, Brasil.',
       },
     ],
-    brands: [
-      {
-        id: 0
-      }
-    ]
   },
 };
