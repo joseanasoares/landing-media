@@ -26,9 +26,9 @@ export class ContentComponent implements OnInit {
   @Input() buttonColor: string = ''
   @Input() buttonIcon: string =''
   @Input() buttonText: string =''
-  svgContent: string[] = [];
-  svgContentSm: string[] = [];
-  brandContent: string[] = [];
+  public svgContent: string[] = [];
+  public svgContentSm: string[] = [];
+  public brandContent: string[] = [];
 
   ngOnInit(): void {
     this.loadIcons();

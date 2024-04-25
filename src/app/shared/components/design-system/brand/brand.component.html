@@ -1,7 +1,7 @@
 <div *ngIf="brandContent.length > 1; else singleImage">
   <div class="grid-container">
     <div class="grid-item" *ngFor="let option of brandContent">
-      <img [src]="option" alt="marcas" />
+      <img [src]="option"/>
     </div>
   </div>
 </div>

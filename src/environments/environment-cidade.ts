@@ -4,6 +4,13 @@ export const environment = {
     assetsDirectory: 'assets-cidade',
     properties: {
       text: 'O TEMPO na Cidade® é um produto da meteoblue® que traz para o Brasil as melhores soluções de Monitoramento Climático validadas em Centros Urbanos na Europa e Estados Unidos: monitoramento em tempo-real, Nowcasting, previsão hyperlocal, mapas de calor de altíssima resolução, cenários futuros de mudanças climáticas etc; Destaque na Meteorological Technology World Expo 2023, em Geneva, na Suíça.',
+      brands: [
+        {
+          id:1,
+          image: 'brand1',
+          alt: "cidade"
+        }
+      ],   
       location: [
         {
           id: 1,

@@ -39,22 +39,20 @@ export class GeralComponent {
 
   public svgPaths:string[]
   public locations: Location[] = []
-  public brands: string[] = [];
-
- 
+  public brands: string[] = [] 
 
 
   constructor() {
 
+    console.log(this.assetsDirectory)
+
     if (this.context === "meteoblue") {
-      console.log('default');
 
       this.svgPaths = [
         `${this.assetsDirectory}/logo.svg`,
         `${this.assetsDirectory}/brazil.svg`
       ]
     } else {
-      console.log(this.context);
       this.svgPaths = [`${this.assetsDirectory}/logo.svg`]
     }
 
@@ -62,18 +60,14 @@ export class GeralComponent {
       this.locations.push(location);
     });
 
+    environment.properties.brands.forEach(brand => {
+      this.brands.push(`${this.assetsDirectory}/${brand.image}.svg`)
+    })
   }
-
-
 
   public svgPathsSm: string[] = [
     'assets/logos/meteoblue-sm.svg',
     'assets/logos/brazil-sm.svg'    
-  ]
-
-  public brandPath: string[] = [
-    'assets/brands/tempo-cidade.svg',
-    'assets/brands/clima-campo.svg', 
   ]
 
   public text: string = `${environment.properties.text}`

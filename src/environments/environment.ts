@@ -5,6 +5,18 @@ export const environment = {
     assetsDirectory: 'assets',
     properties: {
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor gravida diam aliquam blandit. Mauris lacinia augue nulla, placerat sollicitudin.',
+      brands: [
+        {
+          id:1,
+          image: 'brand1',
+          alt: "Tempo na Cidade"
+        },
+        {
+          id:2,
+          image: 'brand2',
+          alt: "Clima no Campo"
+        }
+      ],
       location: [{
         'id': 1,
         'flag': 'assets/icons/br.png',
